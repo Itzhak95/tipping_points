@@ -4,6 +4,6 @@ This code calculates the share who will end up doing an activity given the distr
 
 Before running the code, please specify:
 
-1. The distribution of tipping points. These are the $p_i$ parameters (p_0, p_1, etc.)
+1. The distribution of tipping points. These are the $p_i$ parameters ($p_0$, $p_1$, etc.)
 2. The side length of the grid l (which leads to a population size l^2).
 3. The initial share who do the activity (this variable is called initial_share).
