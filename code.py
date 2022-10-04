@@ -2,14 +2,31 @@ import random, statistics
 
 print("Social pressure on a network")
 
-# To run the program, first specify the distribution of tipping points
-# p0 is the share who always do it, p1 share who do it iff 1 person does it, etc.
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+
+# INPUTS
+
+# To run the program, first specify
+
+# 1. The distribution of individual tipping points:
 
 p0 = 0.20265441
 p1 = 0.032637
 p2 = 0.0439544
 p3 = 0.0850202
 p4 = 0.1231127
+
+# 2. The grid size
+
+s = 10
+
+# 3. The initial share who do the activity
+
+initial_share = 0.5
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+
+# SIMULATIONS
 
 probabilities = [p0, p1, p2, p3, p4]
 
@@ -27,15 +44,11 @@ if p4 == p3 == p2 == p1:
 
 # Specify the size of the grid (make sure there are no integer issues!)
 
-s = 10
-
 answers = []
 
 for i in range(1000):
 
     # Specify the fraction who initially do the action, and randomly scatter on these on a grid
-
-    initial_share = 1
 
     initial_number = int(initial_share*s**2)
 
