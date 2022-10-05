@@ -189,5 +189,5 @@ for i in range(1000):
     answers.append(counter(grid)/s**2)
 
 print(answers)
-print(f'Mean: {statistics.mean(answers)}')
-print(f'Variance: {statistics.variance(answers)}')
+print(f'Mean: {format(statistics.mean(answers), ".3f")}')
+print(f'Variance: {format(statistics.variance(answers), ".3f")}')
