@@ -6,7 +6,7 @@ print("Social pressure on a network")
 
 # INPUTS
 
-# To run the program, first specify
+# BEFORE RUNNING THE PROGRAM, PLEASE SPECIFY:
 
 # 1. The distribution of individual tipping points:
 
@@ -28,6 +28,8 @@ initial_share = 0.5
 
 # SIMULATIONS
 
+# Check that the probabilities are valid
+
 probabilities = [p0, p1, p2, p3, p4]
 
 for element in probabilities:
@@ -36,19 +38,14 @@ for element in probabilities:
 
 if sum(probabilities) > 1:
     print("ERROR -- THE SUM OF PROBABILITIES CANNOT EXCEED 1!")
-
-# If the f function is linear, let's print the fixed point
-
-if p4 == p3 == p2 == p1:
-    print(f'Fixed point: {round(p0/(1-4*p1), 2)}')
-
-# Specify the size of the grid (make sure there are no integer issues!)
+    
+# We now start the simulations
 
 answers = []
 
 for i in range(1000):
 
-    # Specify the fraction who initially do the action, and randomly scatter on these on a grid
+    # Randomly scatter the initial actions on the grid
 
     initial_number = int(initial_share*s**2)
 
