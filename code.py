@@ -39,7 +39,7 @@ for element in probabilities:
 if sum(probabilities) > 1:
     print("ERROR -- THE SUM OF PROBABILITIES CANNOT EXCEED 1!")
     
-# We now start the simulations
+# We now start the simulations (we run 1000 simulations by default, but this may be changed by modifying line 46).
 
 answers = []
 
